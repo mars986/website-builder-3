@@ -15,7 +15,7 @@
 	},
 	"scripts": {
 		"dev": "wrangler dev --remote",
-		"build": "node scripts/setup-quick.js",
+		"build": "echo \"No build required\"",
 		"deploy": "wrangler deploy",
 		"setup": "node scripts/setup.js",
 		"setup:quick": "node scripts/setup-quick.js",

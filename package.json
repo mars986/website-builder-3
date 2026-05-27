@@ -6,24 +6,8 @@
 	"engines": {
 		"node": ">=18"
 	},
-	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.5.30",
-		"@cloudflare/workers-types": "^4.20241205.0",
-		"typescript": "^5.0.0",
-		"vitest": "^2.1.8",
-		"wrangler": "^3.99.0"
-	},
 	"scripts": {
-		"dev": "wrangler dev --remote",
 		"build": "echo \"No build required\"",
-		"deploy": "wrangler deploy",
-		"setup": "node scripts/setup.js",
-		"setup:quick": "node scripts/setup-quick.js",
-		"test": "vitest run",
-		"test:watch": "vitest"
-	},
-	"dependencies": {
-		"hono": "^4.2.1",
-		"workers-qb": "^0.1.1"
+		"deploy": "npm install --no-package-lock --no-audit --no-fund hono@^4.2.1 workers-qb@^0.1.1 @cloudflare/workers-types@^4.20241205.0 typescript@^5.0.0 wrangler@3.114.17 && npx wrangler deploy"
 	}
 }

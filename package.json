@@ -11,12 +11,12 @@
 		"@cloudflare/workers-types": "^4.20241205.0",
 		"typescript": "^5.0.0",
 		"vitest": "^2.1.8",
-		"wrangler": "^3.99.0"
+		"wrangler": "^4.0.0"
 	},
 	"scripts": {
 		"dev": "wrangler dev --remote",
 		"build": "node scripts/setup-quick.js",
-		"deploy": "wrangler deploy && node scripts/setup-quick.js --set-secrets",
+		"deploy": "wrangler deploy",
 		"setup": "node scripts/setup.js",
 		"setup:quick": "node scripts/setup-quick.js",
 		"test": "vitest run",
@@ -30,7 +30,6 @@
 		"label": "Website Builder",
 		"products": [
 			"Workers",
-			"Workers for Platforms",
 			"D1"
 		],
 		"categories": [

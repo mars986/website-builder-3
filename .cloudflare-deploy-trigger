@@ -1,4 +1,4 @@
 Cloudflare deploy trigger
 
-Last requested: 2026-05-26T17:27:00-07:00
-Reason: force a new GitHub push after removing Workers for Platforms dispatch namespace config.
+Last requested: 2026-05-26T17:19:00-07:00
+Reason: force a new GitHub push after restoring package-lock-compatible dependency versions.
